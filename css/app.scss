@@ -113,7 +113,7 @@ body {
     row-gap: 4px;
 
     .items {
-        flex-basis: 32%;
+        flex-basis: 100%;
 
     }
 }
@@ -188,3 +188,18 @@ body {
         background-color: #becd24 !important;
     }
 }
+
+.scrollerAdjust{
+    max-height: 60vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.scrollerAdjust::-webkit-scrollbar {
+    background-color:#fff;
+    width: 4px;
+  }
+  .scrollerAdjust::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    background: $primary;
+  }

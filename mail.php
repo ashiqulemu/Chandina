@@ -6,21 +6,18 @@ $name = $_POST['name'];
 $phone= $_POST['phone'];
 $message= $_POST['message']; 
 
-$to = "ashiqulemu.jpi@gmail.com";
-
+$to = "ashiqulemu.jpi@gmail.com"; 
 $subject = "Mail From Testing";
 
 $txt = 
-  " Name: " . $name . " \r\n ".
-  " Phone :" . $phone . " \r\n ".
-  " Message :" . $message;
+"Name:" . $name . "\r\n"."Phone:" . $phone . "\r\n"."Message:" . $message;
 
-$headers = "From: noreply@codeconia.com";
+$headers = "From: YourBrand@email.com";
 
-if($email!=NULL){
-    mail($to,$subject,$txt,$headers);
+if($phone!=NULL){
+    mail($to,$subject,$txt,$headers); 
 }
 
   //redirect
-   header("Location:thankyou.html");
+   header("Location:thankyou.php");
 ?>
